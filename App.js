@@ -1,5 +1,5 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { StyleSheet, View } from "react-native";
 import { RkButton, RkTextInput, RkText } from "react-native-ui-kitten";
 
 export default class App extends React.Component {
@@ -7,7 +7,9 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
         <RkTextInput rkType="bordered" placeholder="WaniKani API Key" />
-        <RkText rkType="small" style={styles.hint}>Find this under Settings &gt; Account on WaniKani</RkText>
+        <RkText rkType="small" style={styles.hint}>
+          Find this under Settings &gt; Account on WaniKani
+        </RkText>
         <RkButton rkType="primary stretch">Start Reviews</RkButton>
       </View>
     );
@@ -17,9 +19,9 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
     padding: 10
   },
   hint: {
